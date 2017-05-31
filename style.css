@@ -1,0 +1,80 @@
+#appContainer, html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    outline: black 1px solid;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.Semester {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.Subject {
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex: 1 1 auto;
+}
+
+.SemesterIndicator {
+    width: 25px;
+    display: flex;
+    box-shadow: 1px 0 0 black;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SubjectContent {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.SubjectName, .SubjectSWS, .SubjectLP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SubjectName {
+    height: 80%;
+    width: 100%;
+    flex: 0 1 auto;
+    min-width: 100%;
+    box-shadow: 0 1px 0 black;
+}
+
+.SubjectSWS, .SubjectLP {
+    flex: 1 0 auto;
+    width: 50%;
+    height: 20%;
+}
+
+.SubjectSWS {
+    box-shadow: 1px 0 0 black;
+}
